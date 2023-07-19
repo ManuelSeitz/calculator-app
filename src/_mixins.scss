@@ -1,0 +1,18 @@
+@mixin flex ($justify) {
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+}
+
+@mixin colors ($color, $background, $bcolor) {
+    color: var($color);
+    background-color: var($background);
+    border-bottom: 4px solid var($bcolor);
+}
+
+@mixin gridValues ($column, $rows, $colgap, $rowgap) {
+    grid-template-columns: repeat(4, $column);
+    grid-template-rows: repeat(4, $rows);
+    column-gap: $colgap;
+    row-gap: $rowgap;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Calculator app</title>
+
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <nav class="nav">
+        <h1 class="nav__logo">Calc</h1>
+        <div class="toggle">
+          <h2 class="toggle__title">Theme</h2>
+          <div class="toggle__container">
+            <datalist class="toggle__numbers" id="toggle__numbers">
+              <option value="1" class="toggle__number">1</option>
+              <option value="2" class="toggle__number">2</option>
+              <option value="3" class="toggle__number">3</option>
+            </datalist>
+            <input type="range" name="toggle-range" id="toggle-range" min="1" max="3" value="1" step="1" list="toggle__numbers" class="toggle__input">
+          </div>
+        </div>
+      </nav>
+      <div class="header__screen">
+        <span class="header__screen_container">0</span>
+      </div>
+    </header>
+    <main class="main">
+      <button class="main__key" value="7">7</button>
+      <button class="main__key" value="8">8</button>
+      <button class="main__key" value="9">9</button>
+      <button class="main__key main__key--blue" id="del" value="del">del</button>
+      <button class="main__key" value="4">4</button>
+      <button class="main__key" value="5">5</button>
+      <button class="main__key" value="6">6</button>
+      <button class="main__key" value="+">+</button>
+      <button class="main__key" value="1">1</button>
+      <button class="main__key" value="2">2</button>
+      <button class="main__key" value="3">3</button>
+      <button class="main__key" value="-">-</button>
+      <button class="main__key" value=".">.</button>
+      <button class="main__key" value="0">0</button>
+      <button class="main__key" value="/">/</button>
+      <button class="main__key" value="*">x</button>
+      <button class="main__key main__key--reset main__key--blue" id="reset" value="reset">reset</button>
+      <button class="main__key main__key--equal main__key--red" id="equal" value="=">=</button>
+    </main>
+  </div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="app.js"></script>
+</body>
+</html>
